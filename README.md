@@ -35,7 +35,7 @@ The Docker environment project.
 
 Copy and rename the '.env.example' file to '.env'.
 
-Modify the Source directory in .env file.
+Modify the source directory in .env file.
 ```
 SOURCE_PATH=<SOURCE DIRECTORY>
 VOLUME_PATH=/var/www/html1
@@ -97,35 +97,9 @@ if it's all successed, all the services are running as image below
 
 http://localhost/
 
-
+* if the default port 80/443 has modified in .env file, it's must be specified in the url properly.
 
 ## Useful commands inside container
-
-To update composer packages
-```bash
-composer install
-```
-
-Show docker images
-```bash
-docker ps
-```									
-
-Inspect a container											
-eg : check container service redis</br>
-```bash
-docker inspect redis
-```
-
-Check docker network
-```bash
-docker network ls										
-```
-
-Remove specific docker network
-```bash
-docker network rm NETWORK [NETWORK...]											
-```
 
 Get inside a containner
 eg:
@@ -134,8 +108,32 @@ eg:
     docker exec -it docker_phpfpm_1 bash
 ```
 
-Other docker commands
-=====================
+To update composer packages
+```bash
+composer install
+```
+
+Show docker images (run on host machine)
+```bash
+docker ps
+```									
+
+Inspect a container (run on host machine)	
+eg : check container service redis</br>
+```bash
+docker inspect redis
+```
+
+Check docker network (run on host machine)
+```bash
+docker network ls										
+```
+
+Remove specific docker network (run on host machine)
+```bash
+docker network rm NETWORK [NETWORK...]											
+```
+
 - (Optional) Cleanup build folder (run on host machine):
 ```bash
 docker system prune
