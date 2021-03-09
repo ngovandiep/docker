@@ -49,14 +49,31 @@ Eg:
 SOURCE_PATH=C:\workspace\laravel-react-project
 ```
 
-- modify others configurations if needed.</br>
-eg: you can modify the port number of http and https as the configurations bellow.
+- Modify others configurations if needed.</br>
+eg: you can modify the port number of http/https as the configurations bellow.
 ```
 APP_PORT=80
 APP_SSL_PORT=443
 ```
 
-**3. Build docker**
+**3. Check configuration of Nginx server**
+Directory docker\nginx\conf.d\default.conf
+```
+server {
+    ...
+    root  /var/www/html1/public;
+    ....
+    location ~ \.php {
+      fastcgi_pass            docker_phpfpm_1:9000;
+    ...
+    }
+}
+```
+Explain
+- root : the VOLUME_PATH, the project mounted directory
+- docker_phpfpm_1 : phpfpm containner, the generated default name
+
+**4. Build docker**
 
 By using, window command line<br />
 
@@ -74,9 +91,12 @@ docker-compose up
 if it's all successed, all the services are running as image bellow
 ![Mount](wiki/docker-desktop.JPG)
 
-**4. Access local site**
+**5. Access local site**
 
 http://localhost/
+
+
+
 
 
 ## Useful commands inside container
