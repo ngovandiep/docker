@@ -36,10 +36,10 @@ The Docker environment project.
 
 In file docker\.env
 
-...
+```
 SOURCE_PATH=_SOURCE DIRECTORY_
 VOLUME_PATH=/var/www/html1
-...
+```
 
 - Application will be mounted to `/var/www/html1`
  
