@@ -1,8 +1,7 @@
-Docker
+Docker setup
 ===============
 
 The Docker environment project.
-
 
 ## Directory structure
 ```
@@ -30,7 +29,7 @@ The Docker environment project.
 - Download Docker Desktop for Windows.
   https://hub.docker.com/editions/community/docker-ce-desktop-windows/
 
-(*) Notes: Requires Microsoft Windows 10 Professional or Enterprise 64-bit, or Windows 10 Home 64-bit with WSL 2.
+  (*) Notes: Requires Microsoft Windows 10 Professional or Enterprise 64-bit, or Windows 10 Home 64-bit with WSL 2.
 
 **2. Modify project path**
 
@@ -59,7 +58,7 @@ By using, window command line/
 ```bash
 docker-compose build
 ```
-																						
+
 3/ Build containner.																				
 ```bash
 docker-compose up
@@ -77,34 +76,31 @@ To update composer packages
 composer install
 ```
 
-To fix PHP code syntax (please run before committing)
-```bash
-fixer
-```
-
-show docker images
+Show docker images
 ```bash
 docker ps
 ```									
-inspect a container											
+
+Ispect a container											
 eg : check container service redis										
 ```bash
 docker inspect redis
-```	
+```
+
 Check docker network
 ```bash
 docker network ls										
 ```
 
-Check docker network
+Remove specific docker network
 ```bash
 docker network rm NETWORK [NETWORK...]											
 ```
 
 Get inside a containner
 eg:
-    docker exec -it docker_nginx_1 bash										
-	docker exec -it docker_phpfpm_1 bash										
+    docker exec -it docker_nginx_1 bash/
+    docker exec -it docker_phpfpm_1 bash/
  
 Other docker commands
 =====================
