@@ -1,4 +1,4 @@
-ShoppingFrontEnd_Docker
+Docker
 ===============
 
 The Docker environment project.
