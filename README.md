@@ -76,7 +76,7 @@ Explain
 
 **4. Build docker**
 
-By using, window command line<br />
+By using window command line ..etc<br />
 
 1/ Go to docker's directory.<br />
 2/ Build image by command.<br />
