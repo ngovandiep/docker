@@ -37,8 +37,7 @@ The Docker environment project.
 In file docker\.env
 
 ...
-SOURCE_PATH=<SOURCE DIRECTORY>
-
+SOURCE_PATH=_SOURCE DIRECTORY_
 VOLUME_PATH=/var/www/html1
 ...
 
