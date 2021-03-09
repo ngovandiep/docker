@@ -37,13 +37,13 @@ The Docker environment project.
 In file docker\.env
 
 ```
-SOURCE_PATH=_SOURCE DIRECTORY_
+SOURCE_PATH=<SOURCE DIRECTORY>
 VOLUME_PATH=/var/www/html1
 ```
 
 - Application will be mounted to `/var/www/html1`
  
-You may modify project paths 'SOURCE_PATH' in above directory with your local paths.
+You may modify project paths <SOURCE DIRECTORY> in above directory with your local paths.
 
 Eg:
 ```
@@ -54,13 +54,16 @@ SOURCE_PATH=D:\NGODIEP\cadabra\BMIM
 
 By using, window command line/
 
-1/ Go to docker's directory																				D:\NGODIEP\cadabra\docker																				
+1/ Go to docker's directory : ~\docker																																
+2/ Build image by command
+```bash
+docker-compose build
+```
 																						
-2/ build image by command
-	docker-compose build																					
-																						
-3/  build containner																				
-	docker-compose up
+3/ Build containner																				
+```bash
+docker-compose up
+```
 
 **4. Access local site**
 
