@@ -81,8 +81,8 @@ Show docker images
 docker ps
 ```									
 
-Ispect a container											
-eg : check container service redis										
+Inspect a container											
+eg : check container service redis</br>
 ```bash
 docker inspect redis
 ```
