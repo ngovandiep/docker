@@ -51,10 +51,10 @@ SOURCE_PATH=C:\workspace\laravel-react-project
 
 **3. Build docker**
 
-By using, window command line/
+By using, window command line\
 
-1/ Go to docker's directory./
-2/ Build image by command./
+1/ Go to docker's directory.\
+2/ Build image by command.\
 ```bash
 docker-compose build
 ```
@@ -99,8 +99,8 @@ docker network rm NETWORK [NETWORK...]
 
 Get inside a containner
 eg:
-    docker exec -it docker_nginx_1 bash/
-    docker exec -it docker_phpfpm_1 bash/
+    docker exec -it docker_nginx_1 bash\
+    docker exec -it docker_phpfpm_1 bash\
  
 Other docker commands
 =====================
