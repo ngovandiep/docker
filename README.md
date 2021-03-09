@@ -33,8 +33,9 @@ The Docker environment project.
 
 **2. Modify project path**
 
-In file docker\.env
+Copy and rename the '.env.example' file to '.env'.
 
+Modify the Source directory in .env file.
 ```
 SOURCE_PATH=<SOURCE DIRECTORY>
 VOLUME_PATH=/var/www/html1
