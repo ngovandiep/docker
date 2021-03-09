@@ -126,12 +126,12 @@ docker inspect redis
 
 Check docker network (run on host machine)
 ```bash
-docker network ls										
+docker network ls
 ```
 
 Remove specific docker network (run on host machine)
 ```bash
-docker network rm NETWORK [NETWORK...]											
+docker network rm NETWORK [NETWORK...]
 ```
 
 - (Optional) Cleanup build folder (run on host machine):
