@@ -22,24 +22,23 @@ The Docker environment project.
 │
 ├─ .env
 │
-└─ logs
-    └─ ...
 ```
 
 ## Setup manual
 **1. Install Docker Desktop on Windows**:
 
-- Download Docker Desktop for Windows
+- Download Docker Desktop for Windows.
   https://hub.docker.com/editions/community/docker-ce-desktop-windows/
 
-- Notes: Requires Microsoft Windows 10 Professional or Enterprise 64-bit, or Windows 10 Home 64-bit with WSL 2.
+(*) Notes: Requires Microsoft Windows 10 Professional or Enterprise 64-bit, or Windows 10 Home 64-bit with WSL 2.
 
 **2. Modify project path**
 
-File docker\.env
+In file docker\.env
 
 ...
 SOURCE_PATH=<SOURCE DIRECTORY>
+
 VOLUME_PATH=/var/www/html1
 ...
 
