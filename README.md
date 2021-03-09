@@ -54,8 +54,8 @@ SOURCE_PATH=C:\workspace\laravel-react-project
 
 By using, window command line/
 
-1/ Go to docker's directory.\n
-2/ Build image by command.
+1/ Go to docker's directory./
+2/ Build image by command./
 ```bash
 docker-compose build
 ```
@@ -67,7 +67,7 @@ docker-compose up
 
 **4. Access local site**
 
-http://localhost:/
+http://localhost/
 
 
 ## Useful commands inside container
