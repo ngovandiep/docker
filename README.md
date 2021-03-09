@@ -21,7 +21,7 @@ The Docker environment project.
 │
 ├─ .env
 │
-```
+```wiki
 
 ## Setup manual
 **1. Install Docker Desktop on Windows**:
