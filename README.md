@@ -160,7 +160,7 @@ So, remove the confict network or changing the config in .env file and build aga
 Remove the confict network by following commands
 ```bash
 docker network ls
-docker network rm NETWORK [NETWORK...]
+docker network rm NETWORK_NAME
 ```
 
 changing the ip config in .env file.
