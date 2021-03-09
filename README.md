@@ -49,6 +49,13 @@ Eg:
 SOURCE_PATH=C:\workspace\laravel-react-project
 ```
 
+- modify others configurations if needed.</br>
+eg: you can modify the port number of http and https as the configurations bellow.
+```
+APP_PORT=80
+APP_SSL_PORT=443
+```
+
 **3. Build docker**
 
 By using, window command line<br />
@@ -64,6 +71,7 @@ docker-compose build
 docker-compose up
 ```
 
+if it's all successed, all the services are running as image bellow
 ![Mount](wiki/docker-desktop.JPG)
 
 **4. Access local site**
