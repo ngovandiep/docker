@@ -152,7 +152,7 @@ docker rmi $(docker images -q)
 
 ## Common errors and how to solve
 1. ERROR: Pool overlaps with other one on this address space
-![Mount](wiki/error_pool overlaps.JPG)
+![Mount](wiki/error_pool_overlaps.JPG)
 
 check the docker subnet mark is already in use or changing the config in .env file and build again!
 
