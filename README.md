@@ -99,9 +99,11 @@ docker network rm NETWORK [NETWORK...]
 
 Get inside a containner
 eg:
+```bash
     docker exec -it docker_nginx_1 bash<br />
     docker exec -it docker_phpfpm_1 bash<br />
- 
+```
+
 Other docker commands
 =====================
 - (Optional) Cleanup build folder (run on host machine):
