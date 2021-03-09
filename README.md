@@ -47,20 +47,20 @@ You may modify project paths <SOURCE DIRECTORY> in above directory with your loc
 
 Eg:
 ```
-SOURCE_PATH=D:\NGODIEP\cadabra\BMIM
+SOURCE_PATH=C:\workspace\laravel-react-project
 ```
 
 **3. Build docker**
 
 By using, window command line/
 
-1/ Go to docker's directory : ~\docker																																
-2/ Build image by command
+1/ Go to docker's directory.
+2/ Build image by command.
 ```bash
 docker-compose build
 ```
 																						
-3/ Build containner																				
+3/ Build containner.																				
 ```bash
 docker-compose up
 ```
