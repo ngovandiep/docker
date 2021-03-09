@@ -64,6 +64,8 @@ docker-compose build
 docker-compose up
 ```
 
+![Mount](wiki/docker-desktop.JPG)
+
 **4. Access local site**
 
 http://localhost/
