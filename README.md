@@ -118,7 +118,7 @@ Show docker images (run on host machine)
 docker ps
 ```									
 
-Inspect a container (run on host machine)	
+Inspect a container (run on host machine)	</br>
 eg : check container service redis</br>
 ```bash
 docker inspect redis
