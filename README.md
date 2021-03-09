@@ -51,7 +51,7 @@ SOURCE_PATH=C:\workspace\laravel-react-project
 ```
 
 - Modify others configurations if needed.</br>
-eg: you can modify the port number of http/https as the configurations bellow.
+eg: you can modify the port number of http/https instead of the default configuration shown below.
 ```
 APP_PORT=80
 APP_SSL_PORT=443
