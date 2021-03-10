@@ -41,7 +41,7 @@ SOURCE_PATH=<SOURCE DIRECTORY>
 VOLUME_PATH=/var/www/html
 ```
 
-- Application will be mounted to `/var/www/html1`
+- Application will be mounted to `/var/www/html`
  
 You may modify project paths <SOURCE DIRECTORY> in above directory with your local paths.
 
