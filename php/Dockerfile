@@ -22,5 +22,5 @@ RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local
 # Set permissions
 ARG VOLUME_PATH
 RUN echo ${VOLUME_PATH}
-RUN mkdir ${VOLUME_PATH}
+#RUN mkdir ${VOLUME_PATH}
 RUN chown -R www-data:www-data ${VOLUME_PATH}
