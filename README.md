@@ -38,7 +38,7 @@ Copy and rename the '.env.example' file to '.env'.
 Modify the source directory in .env file.
 ```
 SOURCE_PATH=<SOURCE DIRECTORY>
-VOLUME_PATH=/var/www/html1
+VOLUME_PATH=/var/www/html
 ```
 
 - Application will be mounted to `/var/www/html1`
