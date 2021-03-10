@@ -150,6 +150,19 @@ docker rm $(docker ps -a -q)
 docker rmi $(docker images -q)
 ```
 
+## Modify the DB mysql connection of laravel-react-project
+1. In .env file, modify the config:
+```bash
+DB_CONNECTION=mysql
+DB_HOST=172.20.0.5
+DB_PORT=3306
+DB_DATABASE=frappe_dev
+DB_USERNAME=root
+DB_PASSWORD=password
+```
+Explain
+172.20.0.5 : the configured ip in .env file, specifically the value of MYSQL_IPV4_ADDRESS
+
 ## Common errors and how to solve
 1. ERROR: Pool overlaps with other one on this address space
 ![Mount](wiki/error_pool_overlaps.JPG)
