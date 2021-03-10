@@ -154,7 +154,7 @@ docker rmi $(docker images -q)
 1. ERROR: Pool overlaps with other one on this address space
 ![Mount](wiki/error_pool_overlaps.JPG)
 
-the docker subnet mark is already in use 
+the docker subnet mark is already in use </br>
 So, remove the confict network or changing the config in .env file and build again!
 
 Remove the confict network by following commands
