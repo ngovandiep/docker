@@ -161,7 +161,7 @@ DB_USERNAME=root
 DB_PASSWORD=password
 ```
 Explain
-172.20.0.5 : the configured ip in .env file, specifically the value of MYSQL_IPV4_ADDRESS
+172.20.0.5 : the configured ip in .env file, specifically it's the value of MYSQL_IPV4_ADDRESS
 
 ## Common errors and how to solve
 1. ERROR: Pool overlaps with other one on this address space
