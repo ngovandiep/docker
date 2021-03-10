@@ -63,7 +63,7 @@ Directory docker\nginx\conf.d\default.conf
 ```
 server {
     ...
-    root  /var/www/html1/public;
+    root  /var/www/html/public;
     ....
     location ~ \.php {
       fastcgi_pass            docker_phpfpm_1:9000;
