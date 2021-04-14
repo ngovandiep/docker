@@ -61,6 +61,25 @@ services:
     networks:
       default-network :
          ipv4_address: ${MYSQL_IPV4_ADDRESS}
+  sonarqube:
+    image: sonarqube
+    depends_on:
+      - db
+    ports:
+      - "9001:9000"
+    environment:
+      - SONARQUBE_DATABASE_NAME=sonarqubedb
+      - SONARQUBE_DATABASE_USER=mysql
+      - SONARQUBE_DATABASE_PASSWORD=123456
+      - ALLOW_EMPTY_PASSWORD=yes
+    volumes:
+      - sonarqube_data:/opt/sonarqube/data
+      - sonarqube_extensions:/opt/sonarqube/extensions
+      - sonarqube_logs:/opt/sonarqube/logs
+      - sonarqube_temp:/opt/sonarqube/temp
+    networks:
+      default-network :
+         ipv4_address: ${SONAR_SERVER_URL}
 networks:
   default-network:
     driver: bridge
@@ -70,3 +89,8 @@ networks:
     ipam:
      config:
        - subnet: ${DOCKER_SUBNET}
+volumes:
+  sonarqube_data:
+  sonarqube_extensions:
+  sonarqube_logs:
+  sonarqube_temp:
