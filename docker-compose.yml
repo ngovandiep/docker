@@ -68,7 +68,7 @@ services:
     ports:
       - "9001:9000"
     environment:
-      - SONARQUBE_DATABASE_NAME=sonarqubedb
+      - SONARQUBE_DATABASE_NAME=test
       - SONARQUBE_DATABASE_USER=mysql
       - SONARQUBE_DATABASE_PASSWORD=123456
       - ALLOW_EMPTY_PASSWORD=yes
